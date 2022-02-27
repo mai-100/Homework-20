@@ -1,0 +1,139 @@
+/*//Common CSS Start//*/ 
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+body{
+    font-family: sans-serif;
+}
+/*//Common CSS End//*/ 
+
+/*//Navigation CSS Start//*/
+nav{
+    background-color: #3f7806;
+}
+nav .logo{
+    width: 25%;
+}
+nav .logo img{
+    display: block;
+    max-width: 150px;
+    max-height: 100px;
+}
+nav .menu{
+    width: 75%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+    margin: 22px 25px;
+}
+nav .menu ul li a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s linear;
+}
+nav .menu ul li:hover a{
+    color: #afa7e8;
+}
+/*//Navigation CSS End//*/
+
+#banner .banner_slider_item{
+    background-size: cover !important;
+    background-position: center !important;
+    height: 600px;
+    position: relative;
+    z-index: -1;
+}
+#banner .banner_slider_icon{
+    display: hidden;
+}
+#banner ul.banner_slider_dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+#banner ul.banner_slider_dots li{
+    line-height: 0;
+    display: inline-block;
+    margin-right: 25px;
+}
+#banner ul.banner_slider_dots li button{
+    border: none;
+    background: none;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 20%;
+    border: 2px solid rgb(175, 167, 232);
+    cursor: pointer;
+    transition: all linear .4s;
+}
+#banner ul.banner_slider_dots li.slick-active button,
+#banner ul.banner_slider_dots li:hover button{
+    background-color: rgba(175, 167, 232, .5);
+    transform: scale(2)
+}
+#banner .container,
+#banner .container .row{
+    height: 100%;
+}
+#banner .row .banner_content{
+    color: #000;
+    font-size: large;
+    text-align: center;
+}
+#banner .banner_content h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    color: #fff;
+}
+#banner .banner_content h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin: 20px;
+    color: #afa7e8;
+    font-family: 'Courier New', Courier, monospace;
+}
+#banner .banner_content h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin: 30px 0;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+#banner .banner_content p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 60%;
+    margin: auto;
+    color: #fff;
+}    
